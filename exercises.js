@@ -48,7 +48,7 @@ function isTenOrFive(num) {
 function isInRange(num) {
   var inRange = false;
 
-  if (num < 10 && num > 20){
+  if (num < 50 && num > 20){
     inRange = true;
   } else {
     inRange = false;
