@@ -33,11 +33,27 @@ function greeting(language) {
 }
 
 function isTenOrFive(num) {
+  var equalToTenOrFive = false;
+  if (num === 10 || num === 5){
+    equalToTenOrFive = true;
+  } else {
+    equalToTenOrFive = false;
+  }
+
+  return equalToTenOrFive;
   //return true if num is 10 or 5
   //otherwise return false
 }
 
 function isInRange(num) {
+  var inRange = false;
+
+  if (num < 10 && num > 20){
+    inRange = true;
+  } else {
+    inRange = false;
+  }
+  return inRange;
   //return true if num is less than 50 and greater than 20
 }
 
