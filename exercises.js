@@ -1,11 +1,30 @@
 //Do not change any of the function names
 
 function getBiggest(x, y) {
+  if (x > y) {
+    return x;
+  } else {
+    return y;
+  }
   //x and y are integers.  Return the larger integer
   //if they are the same return either one
 }
 
 function greeting(language) {
+  var greet;
+  switch (language) {
+    case 'German':
+      greet = 'Guten Tag!';
+      break;    
+    case 'Spanish':
+      greet = 'Hola!';
+      break;  
+    default:    
+      greet = 'Hello!';
+      break;
+  }
+
+  return greet;
   //return a greeting for three different languages:
   //language: 'German' -> 'Guten Tag!'
   //language: 'English' -> 'Hello!'
